@@ -1,0 +1,47 @@
+title: Solution variant
+description: Details of a single solution variant. Linked from a row in Solution variants. By default live in the same file as that register; use a separate file only when the user asks to decompose the solutions.
+type: object
+rules:
+  - Every solution variant MUST include all required base components.
+  - Type-specific components MUST come from the matching type in variants/.
+conventions:
+  - Base components above are always present on every solution variant.
+  - Additional components come from the variant Type in variants/. Add only those components that the chosen type defines.
+properties:
+  status:
+    type: string
+    description: Current variant status
+    enum:
+      - Selected
+      - Candidate
+      - Rejected
+  statusReason:
+    type: string
+    description: Reason for the variant status
+  PCAD:
+    type: object
+    description: PCAD analysis of the variant
+    properties:
+      pros:
+        type: array
+        description: Pros of the variant
+      cons:
+        type: array
+        description: Cons of the variant
+      advantages:
+        type: array
+        description: Advantages of the variant
+      disadvantages:
+        type: array
+        description: Disadvantages of the variant
+      overallScore:
+        type: number
+        description: Overall score of the variant
+      strategy:
+        type: string
+        description: Strategy to mitigate negative factors
+components:
+  context:
+    required: true
+  openQuestions:
+    required: false

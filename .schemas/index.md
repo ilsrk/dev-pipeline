@@ -41,8 +41,8 @@ Catalog of YAML schemas used when publishing project data (requirements, stories
 | Requirements register | [components/requirements/requirements-register.yaml](./components/requirements/requirements-register.yaml) |
 | Reviews | [components/support/reviews.yaml](./components/support/reviews.yaml) |
 | Solution nodes | [components/solutions/solution-nodes.yaml](./components/solutions/solution-nodes.yaml) |
-| Solution variant | [components/solutions/solution-variant.yaml](./components/solutions/solution-variant.yaml) |
-| Solution variants | [components/solutions/solution-variants.yaml](./components/solutions/solution-variants.yaml) |
+| Solution node variant | [components/solutions/solution-node-variant.yaml](./components/solutions/solution-node-variant.yaml) |
+| Solution node variants | [components/solutions/solution-node-variants.yaml](./components/solutions/solution-node-variants.yaml) |
 | State machine | [components/service/state-machine.yaml](./components/service/state-machine.yaml) |
 | JSON contract | [components/contracts/json-contract.yaml](./components/contracts/json-contract.yaml) |
 | Migration plan | [components/refactoring/migration-plan.yaml](./components/refactoring/migration-plan.yaml) |

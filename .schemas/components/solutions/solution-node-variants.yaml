@@ -9,12 +9,13 @@ rules:
   - Each variant MUST have a Type.
   - The variant details document MUST follow the Solution variant component and the chosen Type.
 conventions:
-  - "Status is one of: Selected, Candidate, Rejected."
+  - Status is one of: Selected, Candidate, Rejected.
   - New variants default to Candidate.
   - Selected is set only when the user asks to choose and finalize a solution. Once this is done, the solution card is considered complete.
   - Candidate marks variants still being evaluated.
   - Rejected marks variants that were considered and declined.
-  - "Type selects extra components from the Solution variant types list. The details document always includes the Solution variant base components, plus the type's components."
+  - Type selects extra components from the Solution variant types list. The details document always includes the Solution variant base components, plus the type's components.
+  - The decision with the Selected status must be displayed in bold.
 softConstraints:
   - Place variant details in the same file as this register. Split variants into separate files only when the user asks to decompose the solutions.
 items:
@@ -36,12 +37,20 @@ items:
         - Selected
         - Candidate
         - Rejected
+    selectedVariant:
+      type: string
+      description: ID of the selected variant
     link:
       type: string
       description: Link to the variant details document
+    scores:
+      type: string
+      description: Scores of the variant
+      example: "**40** (40 - 10 + 20 - 10)"
   required:
     - id
     - title
     - type
     - status
     - link
+    - scores

@@ -4,13 +4,9 @@ type: composite
 required:
   - basic-information
   - variants
-  - testing-plan
-  - implementation-plan
   - support
 sections:
   - basic-information:
   - requirements:
   - variants:
-  - testing-plan:
-  - implementation-plan:
   - support:
