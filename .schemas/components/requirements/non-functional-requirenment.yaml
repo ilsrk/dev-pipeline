@@ -1,0 +1,10 @@
+title: NFN-{STORY_ID}-{REQUIREMENT_ID}: {REQUIREMENT_TITLE}
+description: "Requirement"
+type: object
+properties:
+  description:
+    type: string
+    description: "Requirement description"
+  criteria:
+    type: string
+    description: "- Demonstration of requirement fulfillment"

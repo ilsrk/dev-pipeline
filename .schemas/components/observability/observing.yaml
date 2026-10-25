@@ -1,0 +1,27 @@
+title: Observing
+description: "What are we planning to observe?"
+type: object
+properties:
+  observing:
+    type: array
+    description: What are we planning to observe
+    items:
+      type: string
+  method:
+    type: array
+    description: Observation method
+    items:
+      type: string
+  object:
+    type: string
+    description: Object name
+  efficiency:
+    type: array
+    description: "What benefits will this provide?"
+    items:
+      type: string
+required:
+  - observing
+  - method
+  - object
+  - efficiency

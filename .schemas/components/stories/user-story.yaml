@@ -1,0 +1,34 @@
+title: {STORY_ID}: {STORY_TITLE}
+description: "User story"
+type: object
+required:
+  - story
+  - acceptance_criteria
+properties:
+  story:
+    type: string
+    description: "User story"
+  acceptance_criteria:
+    type: object
+    required:
+      - checklist
+      - criteria
+    properties:
+      checklist:
+        type: array
+        description: "List of acceptance criteria"
+        items:
+          type: string
+          examples: 
+            - "[ ] Email sent 30 days before expiration date"
+            - "[ ] Email includes: chemical name, CAS number, location, expiration date"
+            - "[ ] Email sent to technician assigned to the storage location"
+            - "[ ] No alert for chemicals already marked 'Disposed'"
+            - "[ ] Alert logged in system audit trail"
+
+      criteria:
+        type: array
+        description: "List of acceptance criteria"
+        items:
+          type: string
+          description: "Acceptance criterion"

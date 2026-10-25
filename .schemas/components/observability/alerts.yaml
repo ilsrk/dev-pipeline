@@ -1,0 +1,22 @@
+title: Alerts
+description: Observability alerts for the designed solution.
+type: array
+items:
+  type: object
+  properties:
+    name:
+      type: string
+      description: Alert name
+    condition:
+      type: string
+      description: Condition that triggers the alert
+    severity:
+      type: string
+      description: Alert severity
+    description:
+      type: string
+      description: What the alert means and how to react
+  required:
+    - name
+    - condition
+    - severity

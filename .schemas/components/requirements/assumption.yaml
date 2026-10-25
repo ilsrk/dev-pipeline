@@ -1,0 +1,10 @@
+title: ASM-{ASSUMPTION_ID}: {ASSUMPTION_TITLE}
+description: "Assumption"
+type: object
+properties:
+  description:
+    type: string
+    description: "Assumption description — a statement taken as true for the solution"
+  related:
+    type: string
+    description: "Optional link to related user story, requirement, or open question"

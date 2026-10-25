@@ -1,0 +1,21 @@
+title: Migration plan
+description: Steps and strategy for the refactoring migration.
+type: object
+properties:
+  strategy:
+    type: string
+    description: Migration strategy (incremental, strangler, etc.)
+  steps:
+    type: string
+    description: Ordered migration steps
+  rollback:
+    type: string
+    description: Rollback approach if something goes wrong
+  risks:
+    type: string
+    description: Key risks and mitigations
+required:
+  - strategy
+  - steps
+  - rollback
+  - risks

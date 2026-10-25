@@ -1,0 +1,10 @@
+title: FN-{STORY_ID}-{REQUIREMENT_ID}: {REQUIREMENT_TITLE}
+description: "Requirement"
+type: object
+properties:
+  description:
+    type: string
+    description: "Requirement description"
+  userStory:
+    type: string
+    description: "User story ID and title with link to the user story"

@@ -1,0 +1,6 @@
+title: System design
+description: "System design: which services will be deployed, dependencies between systems, public API contracts, etc."
+type: object
+components:
+  solutionNodes:
+    required: true

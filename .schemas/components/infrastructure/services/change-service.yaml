@@ -1,0 +1,17 @@
+title: Change service
+description: Change to an existing service.
+type: object
+properties:
+  name:
+    type: string
+    description: Service name
+  type:
+    type: string
+    description: Service type
+  changes:
+    type: string
+    description: List of planned changes
+required:
+  - name
+  - type
+  - changes

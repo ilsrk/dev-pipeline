@@ -1,0 +1,11 @@
+id: basic-information
+title: Basic information
+description: "Description and artifacts: everything that needs to be known before starting the design process."
+type: object
+components:
+  context:
+    required: true
+  artifacts:
+    required: false
+  glossary:
+    required: false

@@ -1,0 +1,15 @@
+title: Glossary
+description: Domain and project terms used in the technical design, with their meanings.
+type: array
+items:
+  type: object
+  properties:
+    term:
+      type: string
+      description: The term being defined
+    meaning:
+      type: string
+      description: What the term means
+  required:
+    - term
+    - meaning

@@ -1,0 +1,22 @@
+title: Tables
+description: Created and modified tables.
+type: array
+items:
+  type: object
+  properties:
+    table:
+      type: string
+      description: Table name
+    modification:
+      type: string
+      description: Change type (create, alter, drop, etc.)
+    purpose:
+      type: string
+      description: Why the table is created or changed
+    link:
+      type: string
+      description: Link to the detailed table design
+  required:
+    - table
+    - modification
+    - purpose

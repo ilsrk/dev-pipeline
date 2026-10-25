@@ -1,0 +1,29 @@
+title: Deployment unit
+description: Detailed description of the deployment unit
+type: object
+properties:
+  id:
+    type: string
+    description: Unit ID
+  name:
+    type: string
+    description: Unit name
+  type:
+    type: string
+    description: Unit type
+    enum:
+      - service
+      - account
+      - config
+  description:
+    type: string
+    description: Unit description
+  attributes:
+    $ref: ../attributes.yaml
+    description: Unit attributes
+required:
+  - id
+  - name
+  - type
+  - description
+  - attributes

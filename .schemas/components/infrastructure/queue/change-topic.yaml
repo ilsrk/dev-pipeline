@@ -1,0 +1,33 @@
+title: Change topic
+description: Change to an existing queue topic.
+type: object
+properties:
+  name:
+    type: string
+    description: Topic name
+  driver:
+    type: string
+    description: Queue driver
+  asIs:
+    type: string
+    description: Current topic state
+  toBe:
+    type: string
+    description: Target topic state
+  changes:
+    type: string
+    description: List of planned changes
+  reason:
+    type: string
+    description: Why the change is needed
+  rationale:
+    type: string
+    description: Justification for the chosen approach
+required:
+  - name
+  - driver
+  - asIs
+  - toBe
+  - changes
+  - reason
+  - rationale

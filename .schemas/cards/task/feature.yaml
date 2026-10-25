@@ -1,0 +1,29 @@
+title: "{$TASK_ID} {$TASK_TITLE}"
+description: A feature is a collection of user stories for a project.
+type: composite
+sections:
+  - basicInformation:
+  - anyOf:
+    - application-design:
+    - data-design:
+    - system-design:
+    - observability-design:
+
+  - taskPlan:
+    - testing-plan:
+    - implementation-plan:
+  - service:
+  - reviews:
+
+required:
+  - basicInformation:
+  - oneOf:
+    - application-design:
+    - data-design:
+    - system-design:
+    - observability-design:
+  - taskPlan:
+    - testing-plan:
+    - implementation-plan:
+  - service:
+  - reviews:

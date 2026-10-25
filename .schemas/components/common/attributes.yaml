@@ -1,0 +1,19 @@
+title: Attributes
+description: Object attributes
+type: array
+items:
+  type: object
+  properties:
+    attribute:
+      type: string
+      description: Attribute name
+    type:
+      type: string
+      description: Attribute type
+    value:
+      type: string
+      description: Attribute value
+  required:
+    - attribute
+    - type
+    - value

@@ -1,0 +1,12 @@
+title: Context
+description: Additional information to help solve the problem more effectively and fully address areas of uncertainty and blind spots.
+type: object
+properties:
+  description:
+    type: string
+    description: Short context summary
+  details:
+    type: string
+    description: Detailed context description
+required:
+  - description

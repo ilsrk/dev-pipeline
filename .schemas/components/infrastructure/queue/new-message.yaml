@@ -1,0 +1,13 @@
+title: New message
+description: New queue message design.
+type: object
+properties:
+  topic:
+    type: string
+    description: Target topic name
+  messageContract:
+    type: string
+    description: Message payload as JSON contract link
+required:
+  - topic
+  - messageContract

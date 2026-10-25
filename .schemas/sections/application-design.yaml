@@ -1,0 +1,6 @@
+title: Application design
+description: "Application design: components, layers, contracts, and dependencies."
+type: object
+components:
+  solutionNodes:
+    required: true

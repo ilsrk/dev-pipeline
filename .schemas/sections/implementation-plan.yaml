@@ -1,0 +1,25 @@
+title: Implementation plan
+description: "Implementation plan: breakdown into phases and phases into tasks."
+type: array
+items:
+  type: object
+  properties:
+    phase:
+      type: string
+      description: Implementation phase name or number
+    taskId:
+      type: string
+      description: Unique task identifier
+    title:
+      type: string
+      description: Task title
+    description:
+      type: string
+      description: Short task description
+    dependencies:
+      type: string
+      description: References to related tasks or requirements
+  required:
+    - phase
+    - taskId
+    - title

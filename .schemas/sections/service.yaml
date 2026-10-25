@@ -1,0 +1,6 @@
+title: Service
+description: "A service section for managing the technical design process: statuses, logs, tracking, etc."
+type: object
+components:
+  stateMachine:
+    required: true

@@ -1,0 +1,21 @@
+title: Change connection
+description: Change to an existing connection.
+type: object
+properties:
+  name:
+    type: string
+    description: Connection name
+  system:
+    type: string
+    description: Related system
+  description:
+    type: string
+    description: Connection description
+  changes:
+    type: string
+    description: List of planned changes
+required:
+  - name
+  - system
+  - description
+  - changes

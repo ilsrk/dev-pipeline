@@ -1,0 +1,6 @@
+title: Observability design
+description: "Observability design: metrics to be collected, processes to be monitored, etc."
+type: object
+components:
+  solutionNodes:
+    required: true

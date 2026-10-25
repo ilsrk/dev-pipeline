@@ -1,0 +1,14 @@
+title: Solution design
+description: Main section for solution design.
+type: object
+rules:
+  - Variant details MUST use a type from variants/. Do not invent variant structure outside those types.
+  - The section is complete only when one variant has Status Selected with recorded reasons for the choice, and every other variant has Status Rejected with recorded rejection reasons.
+  - If Solution variants contains no variants, the section MUST NOT be considered complete.
+conventions:
+  - Each solution variant must be considered separately.
+softConstraints:
+  - Keep variant details in the same file as the Solution variants register unless the user asks to decompose the solutions.
+components:
+  solutionVariants:
+    required: true

@@ -1,0 +1,27 @@
+title: Requirements register
+description: List of requirements for solving the given problem.
+type: array
+rules:
+  - The requirements register MUST contain AT LEAST one requirement.
+items:
+  type: object
+  properties:
+    id:
+      type: string
+      description: A unique requirement identifier
+    title:
+      type: string
+      description: Requirement title
+    description:
+      type: string
+      description: Short requirement description
+    details:
+      type: string
+      description: Detailed requirement description
+    dependencies:
+      type: string
+      description: References to the parent requirements
+  required:
+    - id
+    - title
+    - description

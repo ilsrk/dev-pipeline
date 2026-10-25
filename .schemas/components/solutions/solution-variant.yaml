@@ -1,0 +1,16 @@
+title: Solution variant
+description: Details of a single solution variant. Linked from a row in Solution variants. By default live in the same file as that register; use a separate file only when the user asks to decompose the solutions.
+type: object
+rules:
+  - Every solution variant MUST include all required base components.
+  - Type-specific components MUST come from the matching type in variants/.
+conventions:
+  - Base components above are always present on every solution variant.
+  - Additional components come from the variant Type in variants/. Add only those components that the chosen type defines.
+components:
+  context:
+    required: true
+  openQuestions:
+    required: false
+  stateMachine:
+    required: true

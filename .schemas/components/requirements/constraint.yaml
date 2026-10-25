@@ -1,0 +1,13 @@
+title: CST-{CONSTRAINT_ID}: {CONSTRAINT_TITLE}
+description: "Constraint"
+type: object
+properties:
+  description:
+    type: string
+    description: "Constraint description — a scope boundary, deferral, or MVP limit"
+  kind:
+    type: string
+    description: "Constraint kind: out-of-scope | deferred | mvp | future"
+  related:
+    type: string
+    description: "Optional link to related user story, requirement, or open question"

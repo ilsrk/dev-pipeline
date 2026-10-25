@@ -1,0 +1,8 @@
+title: Requirements
+description: Requirements for the problem being solved.
+type: object
+rules:
+  - Each requirement type MUST have its own requirements registry.
+components:
+  requirementsRegister:
+    required: true

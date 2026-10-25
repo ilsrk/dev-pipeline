@@ -1,0 +1,20 @@
+title: JSON contract
+description: JSON payload contract as JSON Schema.
+type: object
+conventions:
+  - "Set $schema to https://json-schema.org/draft/2020-12/schema."
+  - Write the full schema in a fenced json block under the Schema section.
+  - If Example is filled, it must be a valid payload for that schema.
+properties:
+  title:
+    type: string
+    description: Contract name
+  schema:
+    type: object
+    description: JSON Schema document (embedded fenced json)
+  example:
+    type: object
+    description: Example JSON payload matching the schema
+required:
+  - title
+  - schema

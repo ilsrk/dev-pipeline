@@ -1,0 +1,41 @@
+title: Solution nodes
+description: A tabular list of solution nodes, with links to the corresponding solution cards and the selected variant after card design is complete.
+type: array
+rules:
+  - Each solution node MUST reference a solution card.
+  - When a solution card is marked complete, Selected solution MUST contain the chosen variant ID and a short description.
+conventions:
+  - In Subject, keep only the shortest possible statement of the decision essence.
+  - "Fill Selected solution only after the solution card design is complete: record the chosen variant ID and a short description."
+  - Leave Selected solution empty while the solution card is still in progress.
+items:
+  type: object
+  properties:
+    id:
+      type: string
+      description: A unique solution node identifier
+    title:
+      type: string
+      description: Solution node title
+    subject:
+      type: string
+      description: Essence of the decision to be made
+    status:
+      type: string
+      description: Current solution status
+    link:
+      type: string
+      description: Link to the corresponding solution card
+    selectedSolution:
+      type: string
+      description: ID and short description of the chosen variant
+    relatedSolutions:
+      type: string
+      description: Links to related solution nodes
+  required:
+    - id
+    - title
+    - subject
+    - status
+    - link
+    - selectedSolution

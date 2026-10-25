@@ -1,0 +1,16 @@
+title: "{$SOLUTION_ID} {$SOLUTION_TITLE}"
+description: The root document of the solution record. It describes the solution node, available variants, the evaluation of each variant, and the reasons for accepting or rejecting each variant.
+type: composite
+required:
+  - basic-information
+  - variants
+  - testing-plan
+  - implementation-plan
+  - support
+sections:
+  - basic-information:
+  - requirements:
+  - variants:
+  - testing-plan:
+  - implementation-plan:
+  - support:

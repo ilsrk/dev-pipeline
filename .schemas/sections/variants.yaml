@@ -1,0 +1,13 @@
+title: Variants
+description: The variants section is used to list the available variants for the solution.
+type: object
+properties:
+  variants:
+    type: array
+    description: The list of available variants for the solution.
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The id of the variant.

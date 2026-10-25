@@ -1,0 +1,15 @@
+title: User Stories Registry
+description: A user stories registry is a collection of user stories for a project.
+type: array
+items:
+  type: object
+  properties:
+    id:
+      type: string
+      description: The id of the user story.
+    summary:
+      type: string
+      description: Brief summary of the user story.
+    link:
+      type: string
+      description: The link to the user story.

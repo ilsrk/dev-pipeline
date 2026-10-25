@@ -1,0 +1,19 @@
+title: Partitions
+description: List of partitions for tables to be designed.
+type: array
+items:
+  type: object
+  properties:
+    table:
+      type: string
+      description: Target table name
+    key:
+      type: string
+      description: Partition key
+    type:
+      type: string
+      description: Partition type (range, list, hash, etc.)
+  required:
+    - table
+    - key
+    - type

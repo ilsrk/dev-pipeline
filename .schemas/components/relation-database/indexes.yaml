@@ -1,0 +1,25 @@
+title: Indexes
+description: List of indexes to be designed.
+type: array
+items:
+  type: object
+  properties:
+    name:
+      type: string
+      description: Index name
+    table:
+      type: string
+      description: Target table name
+    columns:
+      type: string
+      description: Indexed columns
+    type:
+      type: string
+      description: Index type (btree, hash, gin, etc.)
+    unique:
+      type: boolean
+      description: Whether the index is unique
+  required:
+    - name
+    - table
+    - columns

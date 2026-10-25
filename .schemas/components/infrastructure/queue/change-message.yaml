@@ -1,0 +1,33 @@
+title: Change message
+description: Change to an existing queue message.
+type: object
+properties:
+  topic:
+    type: string
+    description: Topic name
+  message:
+    type: string
+    description: Message identifier or name
+  asIs:
+    type: string
+    description: Current message state
+  toBe:
+    type: string
+    description: Target message state
+  changes:
+    type: string
+    description: List of planned changes
+  reason:
+    type: string
+    description: Why the change is needed
+  rationale:
+    type: string
+    description: Justification for the chosen approach
+required:
+  - topic
+  - message
+  - asIs
+  - toBe
+  - changes
+  - reason
+  - rationale

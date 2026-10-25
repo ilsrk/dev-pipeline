@@ -1,0 +1,25 @@
+title: Table
+description: "Single table design: columns and attributes."
+type: array
+items:
+  type: object
+  properties:
+    column:
+      type: string
+      description: Column name
+    type:
+      type: string
+      description: Column data type
+    required:
+      type: boolean
+      description: Whether the column is required
+    default:
+      type: string
+      description: Default value
+    example:
+      type: string
+      description: Example value
+  required:
+    - column
+    - type
+    - required

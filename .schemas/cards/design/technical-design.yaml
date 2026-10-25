@@ -1,0 +1,19 @@
+title: Technical Design
+description: A technical design is a detailed plan for a software solution. It includes the technical architecture, the data model, the interfaces, and the implementation details.
+type: composite
+required:
+  - basic-information
+  - oneOf
+    - solution-design
+    - application-design
+    - database-design
+    - observability-design
+  - support
+objects:
+  - basic-information:
+  - anyOf:
+    - solution-design:
+    - application-design:
+    - database-design:
+    - observability-design:
+  - support:

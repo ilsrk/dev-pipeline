@@ -1,0 +1,40 @@
+title: Metrics
+description: Monitoring metrics collected for the designed solution.
+type: array
+validation:
+  - "Valid metric types: counter, histogram, gauge, log"
+items:
+  type: object
+  properties:
+    name:
+      type: string
+      description: Metric name
+    group:
+      type: string
+      description: Metric group name
+    id:
+      type: string
+      description: Metric ID in the logs
+    type:
+      type: string
+      description: Metric type
+      enum:
+        - counter
+        - histogram
+        - gauge
+        - log
+    attributes:
+      type: string
+      description: Metric additional attributes
+    trigger:
+      type: string
+      description: "What triggers the metric?"
+    source:
+      type: string
+      description: Where the metric is collected from
+  required:
+    - name
+    - id
+    - type
+    - trigger
+    - source

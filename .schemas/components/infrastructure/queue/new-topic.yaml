@@ -1,0 +1,33 @@
+title: New topic
+description: New queue topic design.
+type: object
+properties:
+  name:
+    type: string
+    description: Topic name
+  driver:
+    type: string
+    description: Queue driver
+  partitions:
+    type: number
+    description: Number of partitions
+  partitionKey:
+    type: string
+    description: Key used to route messages
+  producers:
+    type: array
+    description: Services that produce to the topic
+    items:
+      type: string
+  consumers:
+    type: array
+    description: Services that consume from the topic
+    items:
+      type: string
+required:
+  - name
+  - driver
+  - partitions
+  - partitionKey
+  - producers
+  - consumers

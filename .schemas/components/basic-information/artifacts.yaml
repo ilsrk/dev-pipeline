@@ -1,0 +1,21 @@
+title: Artifacts
+description: Links to external documents that must be taken into account and affect the problem being solved.
+type: array
+rules:
+  - Never link to designed solutions, documents, or schemas that do not yet exist in a release.
+  - Artifacts MUST contain only links to AS IS schemas and solutions. Future (TO BE) solutions are forbidden.
+items:
+  type: object
+  properties:
+    title:
+      type: string
+      description: Artifact title
+    link:
+      type: string
+      description: URL or path to the artifact
+    description:
+      type: string
+      description: Short description of the artifact
+  required:
+    - title
+    - link

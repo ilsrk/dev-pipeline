@@ -1,0 +1,22 @@
+title: State machine
+description: A status model reflecting the current status of individual sections and the overall technical design status.
+type: array
+rules:
+  - If a section was skipped, it MUST have a skip reason in Reason.
+conventions:
+  - In Reason, record the reasons for status changes.
+items:
+  type: object
+  properties:
+    section:
+      type: string
+      description: Section name
+    status:
+      type: string
+      description: Current status value
+    reason:
+      type: string
+      description: Reason for the status change
+  required:
+    - section
+    - status

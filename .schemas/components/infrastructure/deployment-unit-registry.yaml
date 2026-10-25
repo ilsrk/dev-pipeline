@@ -1,0 +1,23 @@
+title: Deployment unit registry
+description: "List of deployment units: servers, systems, users, connections, packages, etc."
+type: array
+items:
+  type: object
+  properties:
+    id:
+      type: string
+      description: Unit ID
+    name:
+      type: string
+      description: Unit name
+    whatNeedsToBeDeployed:
+      type: string
+      description: Unit description
+    link:
+      type: string
+      description: Link to the unit configuration component
+  required:
+    - id
+    - name
+    - whatNeedsToBeDeployed
+    - link

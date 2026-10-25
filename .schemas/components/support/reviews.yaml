@@ -1,0 +1,15 @@
+title: Reviews
+description: Technical design reviews and review history.
+type: array
+items:
+  type: object
+  properties:
+    author:
+      type: string
+      description: Who performed the review
+    review:
+      type: string
+      description: Review outcome
+  required:
+    - author
+    - review

@@ -1,0 +1,19 @@
+title: Open Questions
+description: Unanswered questions, areas of uncertainty, difficulties, doubts, and so on.
+type: array
+items:
+  type: object
+  properties:
+    id:
+      type: string
+      description: A unique requirement identifier
+    question:
+      type: string
+      description: The key question
+    uncertainty:
+      type: string
+      description: Doubts and Misgivings
+  required:
+    - id
+    - question
+    - uncertainty

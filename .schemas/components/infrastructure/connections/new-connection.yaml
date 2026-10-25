@@ -1,0 +1,21 @@
+title: New connection
+description: New connection design.
+type: object
+properties:
+  name:
+    type: string
+    description: Connection name
+  service:
+    type: string
+    description: Related service
+  description:
+    type: string
+    description: Connection description
+  configuration:
+    type: string
+    description: Connection configuration
+required:
+  - name
+  - service
+  - description
+  - configuration

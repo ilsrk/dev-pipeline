@@ -1,0 +1,21 @@
+title: New service
+description: New service design.
+type: object
+properties:
+  name:
+    type: string
+    description: Service name
+  type:
+    type: string
+    description: Service type
+  description:
+    type: string
+    description: Service description
+  configuration:
+    type: string
+    description: Service configuration
+required:
+  - name
+  - type
+  - description
+  - configuration

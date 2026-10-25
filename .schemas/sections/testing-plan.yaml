@@ -1,0 +1,23 @@
+title: Testing plan
+description: "Test plan: a document describing how the problem being solved will be tested."
+type: array
+items:
+  type: object
+  properties:
+    id:
+      type: string
+      description: Unique test case or check identifier
+    title:
+      type: string
+      description: Test title
+    type:
+      type: string
+      description: Test type (unit, integration, e2e, manual, etc.)
+    description:
+      type: string
+      description: What is being verified and how
+  required:
+    - id
+    - title
+    - type
+    - description

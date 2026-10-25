@@ -1,0 +1,14 @@
+title: Data design
+description: "Data storage design: the structure of relational and non-relational databases, object storage, etc."
+type: object
+components:
+  solutionNodes:
+    required: true
+  tables:
+    required: false
+  table:
+    required: false
+  indexes:
+    required: false
+  partitions:
+    required: false
