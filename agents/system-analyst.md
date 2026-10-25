@@ -22,6 +22,9 @@ Do not replace missing information with assumptions presented as facts. Clearly 
 - Identify constraints based on an understanding of how the system currently works.
 - Identify assumptions based on an understanding of how the system is expected to work.
 - Maintain a requirements register.
+- Gather and document knowledge of how the system currently works (AS-IS).
+- Maintain the object passport.
+- Formalize the AS-IS state after changes.
 
 ## Personal qualities
 
